@@ -1,0 +1,197 @@
+/* faisal bashir */
+/* web dev 2- colonetasks - task 2 */
+/*  Crative Computing, year 2 Level 5*/
+
+/* body styles of the page */
+body {
+    background-color: #231651;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/*  header styles of the page  with nav bar and search button*/
+.header {
+    background-color: #eef36a;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*  header styles of the page with nav bar and search button*/
+.header h1 {
+    margin: 0;
+    font-size: 2em;
+    font-family: 'Teko', sans-serif;
+}
+/*  nav styles of the page*/
+.nav {
+    display: flex;
+    gap: 16px;
+}
+/*  nav styles of the page*/
+.nav a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Lato', sans-serif;
+}
+/*  search button style, font size, font family, cursor, color, background color*/
+.search {
+    border: 1px solid #231651;
+    padding: 20px 40px;
+    font-size: 2em;
+    font-family: 'teko', sans-serif;
+    cursor: pointer;
+    color: #eef36a;
+    background-color: #231651;
+}
+/* main styles of the page  */
+main {
+    padding: 32px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+/* real container styles, display flex, flex-direction, align-items, gap */
+.real-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px; 
+}
+
+/*  poster-card styles, background-color, border-radius, padding, margin-bottom, font-size, text-align, gap*/
+.poster-card {
+    background-color: #eef36a;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+    font-size: 1.5em;
+    text-align: center;
+    gap: 16px; 
+}
+/*  movie-title styles, font-weight, font-family, font-size, movie-description styles, font-family, font-size, text-align*/
+.movie-title {
+    font-weight: bold;
+    font-family: 'Teko', sans-serif;
+    font-size: 1.2em;
+}
+/*  movie-description styles, font-family, font-size, text-align */
+.movie-description {
+    font-family: 'Lato', sans-serif;
+    font-size: 1em;
+    text-align: left;
+}
+/*  movie-poster styles, width, height, border-radius, object-fit, margin-bottom*/
+.movie-poster {
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/*  watch-now styles, width, background-color, color, border, cursor, font-family, font-size, padding, margin-top*/
+.watch-now {
+    width: 100%;
+    background-color: #231651;
+    color: #eef36a;
+    border: none;
+    cursor: pointer;
+    font-family: 'Teko', sans-serif;
+    font-size: 2em;
+    padding: 8px;
+    margin-top: 20px;
+}
+/*  first-row-layout styles, display, justify-content, align-items, gap*/
+.first-row-layout .poster-card-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px; 
+}
+/*  first-row-layout styles, flex, text-align, max-width,   */
+.first-row-layout .movie-description {
+    flex: 1;
+    text-align: left;
+    max-width: 90%;
+}
+/*  first-row-layout styles, align-self, font-size, padding, width, height*/
+.first-row-layout .watch-now {
+    align-self: flex-start;
+    font-size: 2em;
+    padding: 16px 36px;
+    width: 280px;
+    height: 220px;
+  
+}
+
+/*  horizontal-layout styles, display, gap, align-items, text-align*/
+.horizontal-layout {
+    display: flex;
+    gap: 50px; 
+    align-items: flex-start;
+    text-align: center;
+}
+/*  horizontal-layout styles, width, height, max-height*/
+.horizontal-layout .movie-poster {
+    width: 100%;
+    height: auto;
+    max-height: 350px;
+}
+/*  horizontal-layout styles, width*/
+.horizontal-layout .text-content {
+    width: 90%;
+}
+/*  second-row-layout styles, display, gap, align-items, text-align*/
+        @media (max-width: 720px) {
+            /*  nav styles of the page*/
+    .nav a {
+        display: none;  
+    }
+}
+
+
+/*  media queries */
+@media (max-width: 767px){
+    /*  main styles of the page*/
+    .last-card{
+        display: none;
+    }
+    /*  main styles of the page*/
+    .the-main-card{
+        display: none;
+    }
+
+}
+/*  media queries */
+@media (min-width : 1024px){
+    /*  main styles of the page*/
+    .tab-card{
+        display: none;
+    }
+
+}
+/*  media queries , display */
+@media (min-width: 720px) {
+    /*  header styles of the page*/
+    .header h1 {
+        font-size: 2em;
+    }
+/*  main styles of the page*/
+    .real-container {
+        padding: 80px;
+    }
+/*  two-card-row styles, display, gap, justify-content*/    
+    .two-card-row {
+        display: flex;
+        gap: 100px;
+        justify-content: space-between;
+    }
+/*  two-card-row styles, width*/
+    .two-card-row .poster-card {
+        width: 48%;
+    }
+    /*  main styles of the page*/
+    .last-card{
+        display: none;
+    }
+}
